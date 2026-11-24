@@ -1,0 +1,31 @@
+# ==========================================
+# Archivos grandes y paquetes de diseño
+# (GitHub rechaza archivos > 100MB; 3. Fotos.zip pesa 15GB)
+# ==========================================
+*.zip
+3. Fotos.zip
+Nunito.zip
+
+# Archivos fuente SVG pesados no usados en web
+hsl semana 1.svg
+cleaned_svg.svg
+
+# Archivos del sistema y temporales
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+*.tmp
+*.ppm
+
+# Entornos y editores
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log

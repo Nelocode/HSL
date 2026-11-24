@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="es" data-font-size="normal">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hogar San Lucas | Tu Refugio de Tranquilidad en Medellín</title>
+  <meta name="description" content="Hogar San Lucas es una residencia de cuidado integral senior en Medellín. Atención médica 24/7, estimulación cognitiva, amplios jardines y calor de hogar.">
+  <link rel="icon" href="assets/svg/botanical-branch.svg" type="image/svg+xml">
+  
+  <!-- Preconexión a Google Fonts para carga óptima de Dancing Script y Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER CON NAVEGACIÓN LIMPIA Y ADAPTABLE ==================== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-row">
+        <a href="#inicio" class="header-logo" aria-label="Hogar San Lucas - Inicio">
+          <img src="assets/svg/hogar-san-lucas-logo.svg" alt="Hogar San Lucas Logo">
+        </a>
+
+        <!-- Menú adaptable y espaciado -->
+        <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+          <a href="#compromiso" class="nav-link">Propósito</a>
+          <a href="#instalaciones" class="nav-link">Instalaciones</a>
+          <a href="#equipo" class="nav-link">Equipo</a>
+          <a href="#ubicacion" class="nav-link">Ubicación</a>
+          <a href="#cotizador" class="nav-link">Cotizador</a>
+        </nav>
+
+        <!-- Controles de Accesibilidad A- / A+ & Botón Cápsula -->
+        <div class="header-actions-group">
+          <!-- Control de Accesibilidad A- / A / A+ -->
+          <div class="a11y-font-control" role="group" aria-label="Ajustar tamaño de texto">
+            <button type="button" class="a11y-btn" id="a11yDec" title="Disminuir texto" aria-label="Texto más pequeño">A-</button>
+            <button type="button" class="a11y-btn active" id="a11yReset" title="Texto normal" aria-label="Texto normal">A</button>
+            <button type="button" class="a11y-btn" id="a11yInc" title="Aumentar texto" aria-label="Texto más grande">A+</button>
+          </div>
+
+          <a href="#agendar-visita" class="btn btn-pink header-cta-btn">
+            <span>Agendar Visita</span>
+          </a>
+          <button class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Abrir menú" aria-expanded="false">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-clean-section">
+      <!-- Lado Izquierdo: Línea fluid S-curve + Viñeta con Parallax + Sellos perforados -->
+      <img src="assets/svg/hero-wavy-left.svg" alt="" class="hero-side-doodle left" data-parallax-depth="-0.02" aria-hidden="true">
+      <div class="hero-side-vignette top-left" data-parallax-depth="0.03" data-base-transform="rotate(-6deg)">
+        <img src="assets/img/cuidado.jpg" alt="Acompañamiento y cuidado cariñoso de manos">
+      </div>
+      <div class="postage-stamp stamp-1" data-parallax-depth="0.05" title="9 Años de Experiencia">🌿</div>
+      <div class="postage-stamp stamp-2" data-parallax-depth="-0.04" title="Enfermería Continua">🩺</div>
+
+      <!-- Lado Derecho: Línea fluid S-curve + Viñeta con Parallax + Sellos perforados -->
+      <img src="assets/svg/hero-wavy-right.svg" alt="" class="hero-side-doodle right" data-parallax-depth="0.02" aria-hidden="true">
+      <div class="hero-side-vignette bottom-right" data-parallax-depth="-0.03" data-base-transform="rotate(6deg)">
+        <img src="assets/img/jardines.jpg" alt="Jardines y fuentes campestres">
+      </div>
+      <div class="postage-stamp stamp-3" data-parallax-depth="-0.05" title="Mente Activa y Memoria">🧠</div>
+      <div class="postage-stamp stamp-4" data-parallax-depth="0.04" title="Calor de Hogar">❤️</div>
+
+      <div class="container">
+        <!-- Bloque Tipográfico Central Armonioso -->
+        <div class="hero-center-box">
+          <h1 class="hero-big-title">
+            Tu refugio de<br>
+            <span class="doodle-circled">
+              <span class="font-script script-highlight">tranquilidad</span>
+              <svg viewBox="0 0 360 110" fill="none">
+                <path d="M18 55C15 25 90 8 185 8C280 8 345 28 345 55C345 82 275 102 175 102C75 102 20 85 24 50C26 35 60 18 135 12" stroke="#E86A45" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span> y vida<br>
+            en Medellín
+          </h1>
+
+          <p class="hero-subparagraph">
+            Atención médica y de enfermería 24/7 en una sede campestre donde el afecto, la estimulación activa y el respeto crean un verdadero hogar.
+          </p>
+
+          <!-- Barra de Entrada en Cápsula (Figma style) -->
+          <form class="capsule-form-wrap" id="heroFastForm">
+            <input type="text" id="heroPhoneInput" placeholder="Ingresa tu celular o WhatsApp..." required aria-label="Contacto rápido">
+            <button type="submit" class="btn btn-pink">
+              <span>Agendar</span>
+            </button>
+          </form>
+
+          <!-- Sellos visibles en móvil para no perder el detalle gráfico -->
+          <div class="mobile-stamps-row" aria-hidden="true">
+            <span style="font-size: 1.4rem;" title="9 Años">🌿</span>
+            <span style="font-size: 1.4rem;" title="Enfermería">🩺</span>
+            <span style="font-size: 1.4rem;" title="Memoria">🧠</span>
+            <span style="font-size: 1.4rem;" title="Afecto">❤️</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SELLOS DE CALIDAD Y HABILITACIÓN DE SALUD ==================== -->
+    <section class="trust-badges-strip" id="certificaciones" aria-label="Sellos de calidad y habilitación">
+      <div class="container">
+        <div class="trust-badges-grid">
+          <div class="trust-badge-item reveal-on-scroll delay-1">
+            <div class="trust-badge-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div class="trust-badge-text">
+              <strong>Habilitación en Salud</strong>
+              <span>Secretaría de Salud de Medellín · REPS Vigente</span>
+            </div>
+          </div>
+
+          <div class="trust-badge-item reveal-on-scroll delay-2">
+            <div class="trust-badge-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            </div>
+            <div class="trust-badge-text">
+              <strong>Convenio de Urgencias 24/7</strong>
+              <span>Traslado medicalizado y ambulancia prioritaria</span>
+            </div>
+          </div>
+
+          <div class="trust-badge-item reveal-on-scroll delay-3">
+            <div class="trust-badge-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            </div>
+            <div class="trust-badge-text">
+              <strong>Farmacovigilancia Estricta</strong>
+              <span>Custodia y administración clínica segura de fármacos</span>
+            </div>
+          </div>
+
+          <div class="trust-badge-item reveal-on-scroll delay-4">
+            <div class="trust-badge-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <div class="trust-badge-text">
+              <strong>Infraestructura 100% Adaptada</strong>
+              <span>Pisos antideslizantes, rampas y pulsadores de auxilio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECCIÓN: "CUIDADO CON PROPÓSITO" ==================== -->
+    <section class="partners-recreation-section reveal-on-scroll" id="compromiso">
+      <img src="assets/svg/wavy-under.svg" alt="" class="under-container-wavy" data-scroll-parallax="0.04" aria-hidden="true">
+
+      <div class="container">
+        <div class="partners-header-wrap">
+          <h2 class="partners-headline">
+            Más de 9 años brindando<br>
+            <span class="doodle-underlined">
+              bienestar a las <span class="font-script script-highlight">familias!</span>
+              <svg viewBox="0 0 380 28" fill="none">
+                <path d="M6 18C70 8 200 6 374 14M24 22C110 14 260 12 360 20" stroke="#E86A45" stroke-width="6" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </h2>
+        </div>
+
+        <div class="giant-white-container">
+          <div class="partners-left-text">
+            <h3>Propósito HSL:</h3>
+            <p>
+              En Hogar San Lucas transformamos el cuidado del adulto mayor en una experiencia de afecto, dignidad y estimulación diaria. Nos dedicamos a que cada residente mantenga su autonomía y que sus familias vivan con total serenidad.
+            </p>
+          </div>
+
+          <div class="partners-colored-cards">
+            <div class="color-badge-card card-pink">
+              <div class="card-top-indicator">
+                <div class="card-circle-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <span class="card-time-label">2017 — HOY</span>
+              </div>
+              <p>
+                Atención médica y enfermería permanente. Monitoreo clínico de signos vitales, administración rigurosa de medicamentos y nutrición geriátrica.
+              </p>
+            </div>
+
+            <div class="color-badge-card card-teal">
+              <div class="card-top-indicator">
+                <div class="card-circle-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                </div>
+                <span class="card-time-label">SEDE CAMPESTRE</span>
+              </div>
+              <p>
+                Instalaciones sin barreras, suites confortables, solárium climatizado y jardines seguros con fuentes de agua para disfrutar en familia.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECCIÓN: CÓMO CUIDAMOS ==================== -->
+    <section class="section facilities-bg" id="como-cuidamos">
+      <div class="container">
+        <div class="section-title-center reveal-on-scroll">
+          <h2>
+            Un acompañamiento integral<br>
+            <span class="doodle-underlined">
+              diseñado con <span class="font-script script-highlight">calor de hogar</span>
+              <svg viewBox="0 0 380 28" fill="none">
+                <path d="M6 18C70 8 200 6 374 14M24 22C110 14 260 12 360 20" stroke="#E86A45" stroke-width="6" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </h2>
+          <p>La combinación entre excelencia clínica médica y la calidez de un hogar auténtico.</p>
+        </div>
+
+        <div class="how-we-work-steps">
+          <div class="how-step-row reveal-on-scroll">
+            <div class="how-step-content">
+              <span class="step-number-tag">01 · Valoración Personalizada</span>
+              <h3>Diagnóstico médico, nutricional y cognitivo integral</h3>
+              <p>
+                Conocemos la historia de vida de tu familiar: sus gustos culinarios, rutinas de sueño, pasiones y condiciones médicas para crear un plan individualizado que respeta plenamente su autonomía.
+              </p>
+            </div>
+            <div class="how-step-visual">
+              <img src="assets/img/enfermeria.jpg" alt="Puesto de enfermería 24/7 en Hogar San Lucas" loading="lazy">
+            </div>
+          </div>
+
+          <div class="how-step-row reverse reveal-on-scroll">
+            <div class="how-step-content">
+              <span class="step-number-tag">02 · Estimulación y Vida Social</span>
+              <h3>Fisioterapia, talleres de memoria y eventos que encienden el ánimo</h3>
+              <p>
+                El envejecimiento activo es nuestra mayor convicción. Sesiones guiadas de fisioterapia, lectura compartida, musicoterapia, hidroterapia y salidas tradicionales a la Feria de las Flores que llenan cada día de vitalidad.
+              </p>
+            </div>
+            <div class="how-step-visual">
+              <img src="assets/img/actividades.jpg" alt="Talleres cognitivos y recreativos" loading="lazy">
+            </div>
+          </div>
+
+          <div class="how-step-row reveal-on-scroll">
+            <div class="how-step-content">
+              <span class="step-number-tag">03 · Confort & Naturaleza</span>
+              <h3>Un entorno campestre sin barreras y con puertas abiertas a la familia</h3>
+              <p>
+                Suites luminosas con camas ortopédicas y baños adaptados. Senderos rodeados de árboles nativos y fuentes de agua donde las familias pueden compartir almuerzos y tardes de sol sin horarios restrictivos.
+              </p>
+            </div>
+            <div class="how-step-visual">
+              <img src="assets/img/habitacion.jpg" alt="Habitación confortable y luminosa" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECCIÓN: INSTALACIONES ==================== -->
+    <section class="section" id="instalaciones">
+      <div class="container">
+        <div class="section-title-center reveal-on-scroll">
+          <h2>Nuestras Instalaciones en Medellín</h2>
+          <p>Espacios pensados para la máxima seguridad, comodidad y bienestar de nuestros residentes.</p>
+        </div>
+
+        <!-- Pestañas Filtro -->
+        <div class="facility-filter-tabs reveal-on-scroll">
+          <button class="filter-pill-btn active" data-filter="all">Todos los Espacios</button>
+          <button class="filter-pill-btn" data-filter="habitaciones">Suites & Habitaciones</button>
+          <button class="filter-pill-btn" data-filter="jardines">Jardines y Fuentes</button>
+          <button class="filter-pill-btn" data-filter="salud">Área Médica & Solárium</button>
+        </div>
+
+        <div class="facilities-grid">
+          <div class="facility-card-item reveal-on-scroll delay-1" data-category="jardines">
+            <div class="facility-card-thumb">
+              <img src="assets/img/jardines.jpg" alt="Jardines exteriores" loading="lazy">
+            </div>
+            <div class="facility-card-body">
+              <h4>Jardines y Fuente de Paz</h4>
+              <p>Senderos planos rodeados de naturaleza y el murmullo relajante del agua, ideales para caminatas seguras y descanso matutino.</p>
+            </div>
+          </div>
+
+          <div class="facility-card-item reveal-on-scroll delay-2" data-category="habitaciones">
+            <div class="facility-card-thumb">
+              <img src="assets/img/habitacion.jpg" alt="Suites privadas" loading="lazy">
+            </div>
+            <div class="facility-card-body">
+              <h4>Suites Cómodas y Ventiladas</h4>
+              <p>Habitaciones con luz natural, camas clínicas ergonómicas, pasamanos de seguridad y timbres de asistencia 24/7.</p>
+            </div>
+          </div>
+
+          <div class="facility-card-item reveal-on-scroll delay-3" data-category="salud">
+            <div class="facility-card-thumb">
+              <img src="assets/img/solarium.jpg" alt="Solárium" loading="lazy">
+            </div>
+            <div class="facility-card-body">
+              <h4>Solárium & Zona Húmeda</h4>
+              <p>Espacio climatizado para asolearse plácidamente, recibir hidroterapia y disfrutar de tardes agradables de tertulia.</p>
+            </div>
+          </div>
+
+          <div class="facility-card-item reveal-on-scroll delay-1" data-category="salud">
+            <div class="facility-card-thumb">
+              <img src="assets/img/enfermeria.jpg" alt="Puesto de enfermería" loading="lazy">
+            </div>
+            <div class="facility-card-body">
+              <h4>Puesto de Enfermería 24/7</h4>
+              <p>Monitoreo continuo de signos vitales, control de medicamentos y articulación constante con médicos geriatras.</p>
+            </div>
+          </div>
+
+          <div class="facility-card-item reveal-on-scroll delay-2" data-category="salud">
+            <div class="facility-card-thumb">
+              <img src="assets/img/actividades.jpg" alt="Salón de actividades" loading="lazy">
+            </div>
+            <div class="facility-card-body">
+              <h4>Salón de Estimulación & Arte</h4>
+              <p>Área para pintura, manualidades, juegos de mesa, celebraciones y dinámicas guiadas por terapeutas.</p>
+            </div>
+          </div>
+
+          <div class="facility-card-item reveal-on-scroll delay-3" data-category="habitaciones">
+            <div class="facility-card-thumb">
+              <img src="assets/img/bienestar.jpg" alt="Comedor y salas" loading="lazy">
+            </div>
+            <div class="facility-card-body">
+              <h4>Salas de Estar y Comedor</h4>
+              <p>Ambiente cálido y amigable para disfrutar de la comida casera recién preparada y compartir en comunidad.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== FICHAS DEL EQUIPO HUMANO CON VOCACIÓN REAL ==================== -->
+    <section class="section facilities-bg" id="equipo">
+      <div class="container">
+        <div class="section-title-center reveal-on-scroll">
+          <h2>
+            Las Manos y Corazones que Cuidan:<br>
+            <span class="doodle-underlined">
+              nuestro <span class="font-script script-highlight">equipo asistencial</span>
+              <svg viewBox="0 0 380 28" fill="none">
+                <path d="M6 18C70 8 200 6 374 14M24 22C110 14 260 12 360 20" stroke="#E86A45" stroke-width="6" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </h2>
+          <p>Profesionales capacitados con amplia vocación humana que entregan su día a día al bienestar de cada residente.</p>
+        </div>
+
+        <div class="team-cards-grid">
+          <!-- Miembro 1: María Clara -->
+          <div class="team-card reveal-on-scroll delay-1" data-member="maria-clara">
+            <div class="team-photo-wrap">
+              <img src="assets/img/team/maria-clara.jpg" alt="María Clara - Directora Asistencial" loading="lazy">
+              <span class="team-role-tag">Gerontología & Dirección</span>
+            </div>
+            <div class="team-card-info">
+              <h4>María Clara</h4>
+              <span class="team-credentials">Directora Asistencial · 9 años en HSL</span>
+              <p class="team-quote">
+                «Cuidar con dignidad es comprender que cada residente tiene una historia viva que merece ser honrada con cariño y paciencia.»
+              </p>
+              <div class="team-specialty-row">
+                <span class="spec-pill">Atención Integral</span>
+                <span class="spec-pill">Vínculo Familiar</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Miembro 2: Dr. Alejandro -->
+          <div class="team-card reveal-on-scroll delay-2" data-member="alejandro">
+            <div class="team-photo-wrap">
+              <img src="assets/img/team/alejandro.jpg" alt="Dr. Alejandro - Médico Clínico" loading="lazy">
+              <span class="team-role-tag">Medicina Geriátrica</span>
+            </div>
+            <div class="team-card-info">
+              <h4>Dr. Alejandro</h4>
+              <span class="team-credentials">Médico de Valoración Clínica</span>
+              <p class="team-quote">
+                «La prevención oportuna, la farmacovigilancia rigurosa y el afecto son la verdadera clave de la longevidad saludable.»
+              </p>
+              <div class="team-specialty-row">
+                <span class="spec-pill">Monitoreo Clínico</span>
+                <span class="spec-pill">Polifarmacia</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Miembro 3: Camila -->
+          <div class="team-card reveal-on-scroll delay-3" data-member="camila">
+            <div class="team-photo-wrap">
+              <img src="assets/img/team/camila.jpg" alt="Camila - Fisioterapeuta" loading="lazy">
+              <span class="team-role-tag">Fisioterapia Funcional</span>
+            </div>
+            <div class="team-card-info">
+              <h4>Camila</h4>
+              <span class="team-credentials">Fisioterapeuta & Terapia Ocupacional</span>
+              <p class="team-quote">
+                «Cada paso que damos en el jardín y cada ejercicio en el solárium devuelven autonomía, equilibrio y ganas de sonreír.»
+              </p>
+              <div class="team-specialty-row">
+                <span class="spec-pill">Movilidad Activa</span>
+                <span class="spec-pill">Prevención Caídas</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Miembro 4: Gabriela -->
+          <div class="team-card reveal-on-scroll delay-4" data-member="gabriela">
+            <div class="team-photo-wrap">
+              <img src="assets/img/team/gabriela.jpg" alt="Gabriela - Coordinadora de Enfermería" loading="lazy">
+              <span class="team-role-tag">Enfermería 24/7</span>
+            </div>
+            <div class="team-card-info">
+              <h4>Gabriela</h4>
+              <span class="team-credentials">Coordinadora de Enfermería Continua</span>
+              <p class="team-quote">
+                «Estar presentes día y noche nos convierte en una segunda familia que vela por su tranquilidad y bienestar absoluto.»
+              </p>
+              <div class="team-specialty-row">
+                <span class="spec-pill">Signos Vitales</span>
+                <span class="spec-pill">Cuidado Nocturno</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== UBICACIÓN PRIVILEGIADA EN MEDELLÍN (TARJETAS CON TIEMPOS) ==================== -->
+    <section class="section" id="ubicacion">
+      <div class="container">
+        <div class="section-title-center reveal-on-scroll">
+          <h2>
+            Ubicación Privilegiada en Medellín:<br>
+            <span class="doodle-underlined">
+              cerca de todo, <span class="font-script script-highlight">lejos del ruido</span>
+              <svg viewBox="0 0 380 28" fill="none">
+                <path d="M6 18C70 8 200 6 374 14M24 22C110 14 260 12 360 20" stroke="#E86A45" stroke-width="6" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </h2>
+          <p>Un santuario verde y campestre en Medellín, con conectividad inmediata a los principales centros comerciales y hospitales de alta complejidad del Valle de Aburrá.</p>
+        </div>
+
+        <!-- Barra Superior de Control: Estado + Conmutador de Transporte -->
+        <div class="location-top-bar reveal-on-scroll">
+          <div class="location-status-badge">
+            <span class="status-pulse-dot"></span>
+            <span>Sede Campestre Hogar San Lucas · Tráfico habitual fluido</span>
+          </div>
+
+          <div class="map-switcher-pills" role="radiogroup" aria-label="Modo de transporte">
+            <button type="button" class="mode-pill-btn active" data-mode="car" role="radio" aria-checked="true">
+              🚗 En Automóvil / Taxi
+            </button>
+            <button type="button" class="mode-pill-btn" data-mode="ambulance" role="radio" aria-checked="false">
+              🚑 Ambulancia / Traslado HSL
+            </button>
+          </div>
+        </div>
+
+        <!-- Tarjetas de Tiempos de Llegada en Grid Espacioso y Limpio -->
+        <div class="location-routes-grid reveal-on-scroll">
+          
+          <div class="route-hub-card active" data-hub="tesoro">
+            <div class="route-card-top">
+              <span class="route-hub-icon">🛍️</span>
+              <span class="route-time-pill" id="time-tesoro">12 min</span>
+            </div>
+            <h4>C.C. El Tesoro</h4>
+            <span class="route-dist-label">El Poblado · 3.2 km</span>
+            <p class="route-desc-text">Transversal Superior con acceso directo hacia la zona campestre sin semáforos.</p>
+          </div>
+
+          <div class="route-hub-card" data-hub="santafe">
+            <div class="route-card-top">
+              <span class="route-hub-icon">🏬</span>
+              <span class="route-time-pill" id="time-santafe">15 min</span>
+            </div>
+            <h4>C.C. Santafé</h4>
+            <span class="route-dist-label">Av. El Poblado · 4.1 km</span>
+            <p class="route-desc-text">Subida por la Loma de Los Balsos y conexión inmediata al entorno natural.</p>
+          </div>
+
+          <div class="route-hub-card" data-hub="clinicas">
+            <div class="route-card-top">
+              <span class="route-hub-icon">🏥</span>
+              <span class="route-time-pill" id="time-clinicas">14 min</span>
+            </div>
+            <h4>Clínica Rosario & Vegas</h4>
+            <span class="route-dist-label">Centros Médicos · 3.8 km</span>
+            <p class="route-desc-text">Corredor preferencial para atención de urgencias y citas especializadas.</p>
+          </div>
+
+          <div class="route-hub-card" data-hub="pablo">
+            <div class="route-card-top">
+              <span class="route-hub-icon">🚑</span>
+              <span class="route-time-pill" id="time-pablo">22 min</span>
+            </div>
+            <h4>Hosp. Pablo Tobón</h4>
+            <span class="route-dist-label">Alta Complejidad · 11.5 km</span>
+            <p class="route-desc-text">Conexión ágil por el corredor multimodal del Río Medellín / Autopista Sur.</p>
+          </div>
+
+          <div class="route-hub-card" data-hub="aeropuerto">
+            <div class="route-card-top">
+              <span class="route-hub-icon">✈️</span>
+              <span class="route-time-pill" id="time-aeropuerto">35 min</span>
+            </div>
+            <h4>Aeropuerto JMC</h4>
+            <span class="route-dist-label">Rionegro · 19.0 km</span>
+            <p class="route-desc-text">Directo por Túnel de Oriente y bajada por Las Palmas sin congestión urbana.</p>
+          </div>
+
+        </div>
+
+        <!-- Barra Inferior de Acción y Geolocalización -->
+        <div class="location-actions-banner reveal-on-scroll">
+          <div class="location-banner-text">
+            <strong>¿Vienes por primera vez a Hogar San Lucas?</strong>
+            <span>Vía pavimentada de doble calzada con amplio parqueadero privado para familiares y visitantes.</span>
+          </div>
+          <div class="location-banner-btns">
+            <a href="https://maps.google.com/?q=Hogar+San+Lucas+Medellin" target="_blank" rel="noopener noreferrer" class="btn btn-pink" id="btnGoogleMapsRoute">
+              <span>Abrir en Google Maps &rarr;</span>
+            </a>
+            <a href="https://wa.me/573000000000?text=Hola%20Hogar%20San%20Lucas,%20deseo%20que%20me%20orienten%20sobre%20c%C3%B3mo%20llegar%20a%20la%20sede" target="_blank" rel="noopener noreferrer" class="btn-chat-route">
+              <span>Guía de Ruta por WhatsApp 💬</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== COTIZADOR / ASESOR INTERACTIVO EN 3 PASOS ==================== -->
+    <section class="section facilities-bg" id="cotizador">
+      <div class="container">
+        <div class="section-title-center reveal-on-scroll">
+          <h2>
+            Cotizador Inteligente:<br>
+            <span class="doodle-underlined">
+              descubre el <span class="font-script script-highlight">plan ideal</span> en 3 pasos
+              <svg viewBox="0 0 380 28" fill="none">
+                <path d="M6 18C70 8 200 6 374 14M24 22C110 14 260 12 360 20" stroke="#E86A45" stroke-width="6" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </h2>
+          <p>Selecciona las necesidades de tu ser querido para recibir una propuesta clara, transparente y a la medida.</p>
+        </div>
+
+        <div class="wizard-container reveal-on-scroll">
+          <!-- Wizard Stepper Header -->
+          <div class="wizard-stepper" role="tablist" aria-label="Pasos de cotización">
+            <button type="button" class="wizard-step-tab active" data-step="1" role="tab" aria-selected="true" id="stepTab1">
+              <span class="step-num">1</span>
+              <span class="step-label">Nivel de Autonomía</span>
+            </button>
+            <div class="wizard-step-divider"></div>
+            <button type="button" class="wizard-step-tab" data-step="2" role="tab" aria-selected="false" id="stepTab2">
+              <span class="step-num">2</span>
+              <span class="step-label">Modalidad de Estancia</span>
+            </button>
+            <div class="wizard-step-divider"></div>
+            <button type="button" class="wizard-step-tab" data-step="3" role="tab" aria-selected="false" id="stepTab3">
+              <span class="step-num">3</span>
+              <span class="step-label">Tipo de Habitación</span>
+            </button>
+          </div>
+
+          <!-- Wizard Body: Panels -->
+          <div class="wizard-panels-wrap">
+            
+            <!-- STEP 1: Autonomía -->
+            <div class="wizard-panel active" id="wizardPanel1" role="tabpanel" aria-labelledby="stepTab1">
+              <h3 class="wizard-step-title">¿Cuál es el nivel de independencia de tu familiar?</h3>
+              <p class="wizard-step-desc">Esto nos permite calcular el soporte clínico de enfermería y fisioterapia requerido.</p>
+              
+              <div class="wizard-options-grid">
+                <button type="button" class="wizard-option-card selected" data-field="autonomia" data-value="independiente">
+                  <div class="wizard-opt-icon">🌱</div>
+                  <h4>Autónomo / Activo</h4>
+                  <p>Se vale por sí mismo en sus actividades diarias, busca compañía, descanso, nutrición gourmet y actividades de estimulación.</p>
+                  <span class="wizard-select-pill">Seleccionado</span>
+                </button>
+
+                <button type="button" class="wizard-option-card" data-field="autonomia" data-value="asistencia_moderada">
+                  <div class="wizard-opt-icon">🤝</div>
+                  <h4>Asistencia Moderada</h4>
+                  <p>Requiere apoyo en baño, administración de medicamentos, movilidad guiada y terapia física de mantenimiento.</p>
+                  <span class="wizard-select-pill">Seleccionar</span>
+                </button>
+
+                <button type="button" class="wizard-option-card" data-field="autonomia" data-value="cuidado_integral">
+                  <div class="wizard-opt-icon">🩺</div>
+                  <h4>Cuidado Integral 24/7</h4>
+                  <p>Asistencia constante en todas sus actividades, monitoreo de signos vitales continuo, cuidados paliativos o soporte neurocognitivo.</p>
+                  <span class="wizard-select-pill">Seleccionar</span>
+                </button>
+              </div>
+
+              <div class="wizard-nav-actions right-only">
+                <button type="button" class="btn btn-pink btn-wizard-next" data-goto="2">
+                  <span>Continuar al Paso 2 &rarr;</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 2: Modalidad -->
+            <div class="wizard-panel" id="wizardPanel2" role="tabpanel" aria-labelledby="stepTab2">
+              <h3 class="wizard-step-title">¿Qué modalidad de estancia buscan?</h3>
+              <p class="wizard-step-desc">Ofrecemos opciones flexibles adaptadas a las dinámicas de cada familia.</p>
+
+              <div class="wizard-options-grid">
+                <button type="button" class="wizard-option-card selected" data-field="modalidad" data-value="permanente">
+                  <div class="wizard-opt-icon">🏡</div>
+                  <h4>Residencia Permanente</h4>
+                  <p>Vivir a plenitud en Hogar San Lucas con alimentación 5 tiempos, enfermería continua, lavandería y suite propia.</p>
+                  <span class="wizard-select-pill">Seleccionado</span>
+                </button>
+
+                <button type="button" class="wizard-option-card" data-field="modalidad" data-value="centro_dia">
+                  <div class="wizard-opt-icon">☀️</div>
+                  <h4>Club Centro Día Senior</h4>
+                  <p>Jornada diurna de lunes a viernes: talleres, alimentación balanceada, socialización y regreso a casa en la tarde.</p>
+                  <span class="wizard-select-pill">Seleccionar</span>
+                </button>
+
+                <button type="button" class="wizard-option-card" data-field="modalidad" data-value="temporal">
+                  <div class="wizard-opt-icon">🌿</div>
+                  <h4>Estancia Temporal / Respiro</h4>
+                  <p>Por semanas o meses: recuperación postquirúrgica, rehabilitación o vacaciones tranquilas con todo el respaldo médico.</p>
+                  <span class="wizard-select-pill">Seleccionar</span>
+                </button>
+              </div>
+
+              <div class="wizard-nav-actions">
+                <button type="button" class="btn-outline-back" data-goto="1">&larr; Volver</button>
+                <button type="button" class="btn btn-pink btn-wizard-next" data-goto="3">
+                  <span>Continuar al Paso 3 &rarr;</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 3: Habitación -->
+            <div class="wizard-panel" id="wizardPanel3" role="tabpanel" aria-labelledby="stepTab3">
+              <h3 class="wizard-step-title">¿Qué tipo de suite o habitación prefieren?</h3>
+              <p class="wizard-step-desc">Todas las habitaciones cuentan con iluminación natural, cama clínica ergonómica y llamado de auxilio.</p>
+
+              <div class="wizard-options-grid">
+                <button type="button" class="wizard-option-card selected" data-field="habitacion" data-value="suite_privada">
+                  <div class="wizard-opt-icon">⭐</div>
+                  <h4>Suite Privada con Balcón</h4>
+                  <p>Máxima privacidad, vista privilegiada a los jardines, baño privado adaptado y closet amplio.</p>
+                  <span class="wizard-select-pill">Seleccionado</span>
+                </button>
+
+                <button type="button" class="wizard-option-card" data-field="habitacion" data-value="individual_estandar">
+                  <div class="wizard-opt-icon">🚪</div>
+                  <h4>Habitación Individual Estándar</h4>
+                  <p>Espacio privado cómodo, perfectamente iluminado y con baño adaptado para mayor confort y serenidad.</p>
+                  <span class="wizard-select-pill">Seleccionar</span>
+                </button>
+
+                <button type="button" class="wizard-option-card" data-field="habitacion" data-value="compartida_doble">
+                  <div class="wizard-opt-icon">👥</div>
+                  <h4>Habitación Compartida (2 camas)</h4>
+                  <p>Ideal para fomentar compañía mutua con otro residente de perfil afín, manteniendo confort y calidez.</p>
+                  <span class="wizard-select-pill">Seleccionar</span>
+                </button>
+              </div>
+
+              <div class="wizard-nav-actions">
+                <button type="button" class="btn-outline-back" data-goto="2">&larr; Volver</button>
+                <button type="button" class="btn btn-pink" id="btnCalculatePlan">
+                  <span>Generar Plan & Resumen &rarr;</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 4: Live Recommendation Result -->
+            <div class="wizard-panel" id="wizardPanelResult">
+              <div class="wizard-result-card">
+                <div class="result-header">
+                  <span class="result-badge-kicker">Recomendación Personalizada</span>
+                  <h3 id="resultPlanTitle">Plan Residencia Plena & Bienestar</h3>
+                  <p id="resultPlanDesc">Diseñado a la medida para brindar el más alto nivel de confort, afecto y seguridad clínica continua.</p>
+                </div>
+
+                <div class="result-included-perks">
+                  <h5>Tu plan incluye:</h5>
+                  <ul class="perks-checklist" id="resultPerksList">
+                    <li>✓ Enfermería profesional y auxiliar las 24 horas del día.</li>
+                    <li>✓ Plan nutricional geriátrico en 5 tiempos elaborado por chef y nutricionista.</li>
+                    <li>✓ Fisioterapia funcional y actividades de estimulación cognitiva de memoria.</li>
+                    <li>✓ Habitación seleccionada con timbres asistenciales y baño adaptado.</li>
+                    <li>✓ Acceso libre sin restricciones a solárium, terrazas y senderos campestres.</li>
+                    <li>✓ Traslado y ambulancia de urgencias en convenio 24/7.</li>
+                  </ul>
+                </div>
+
+                <div class="result-cta-box">
+                  <div class="result-cta-prompt">
+                    <strong>¿Deseas conocer la tarifa exacta y disponibilidad actual?</strong>
+                    <span>Te enviamos la cotización detallada por WhatsApp en menos de 5 minutos.</span>
+                  </div>
+                  <a href="#" class="btn btn-pink" id="btnSendQuoteWhatsapp" target="_blank" rel="noopener noreferrer">
+                    <span>Enviar Cotización por WhatsApp 💬</span>
+                  </a>
+                  <button type="button" class="btn-restart-wizard" id="btnRestartWizard">↺ Modificar selecciones</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== AGENDADOR DE VISITAS EN VIVO ==================== -->
+    <section class="section" id="agendar-visita">
+      <div class="container">
+        <div class="section-title-center reveal-on-scroll">
+          <h2>
+            Agenda tu Visita en Vivo:<br>
+            <span class="doodle-underlined">
+              conoce <span class="font-script script-highlight">tu nuevo hogar</span> con un café
+              <svg viewBox="0 0 380 28" fill="none">
+                <path d="M6 18C70 8 200 6 374 14M24 22C110 14 260 12 360 20" stroke="#E86A45" stroke-width="6" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </h2>
+          <p>Selecciona la fecha y la franja horaria que mejor te convenga para coordinar un recorrido guiado por nuestros jardines, solárium y suites.</p>
+        </div>
+
+        <div class="live-scheduler-box reveal-on-scroll">
+          
+          <!-- Lado Izquierdo: Calendario Interactivo -->
+          <div class="scheduler-calendar-col">
+            <div class="calendar-header-nav">
+              <span class="calendar-month-label" id="calMonthLabel">Noviembre 2026</span>
+              <div class="cal-nav-buttons">
+                <button type="button" class="cal-arrow-btn" id="calPrevMonth" aria-label="Mes anterior">&larr;</button>
+                <button type="button" class="cal-arrow-btn" id="calNextMonth" aria-label="Mes siguiente">&rarr;</button>
+              </div>
+            </div>
+
+            <!-- Días de la semana -->
+            <div class="calendar-weekdays-row">
+              <span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span><span>Dom</span>
+            </div>
+
+            <!-- Grid de días interactivo -->
+            <div class="calendar-days-grid" id="calendarDaysGrid">
+              <!-- Días inyectados dinámicamente con JavaScript -->
+            </div>
+
+            <div class="calendar-legend-hint">
+              <span class="cal-legend-bullet available"></span> Fechas con franjas de visita guiada disponibles
+            </div>
+          </div>
+
+          <!-- Lado Derecho: Selector de Horas y Ticket de Confirmación -->
+          <div class="scheduler-slots-col">
+            <h4 class="scheduler-col-title">Franjas Horarias Disponibles:</h4>
+            
+            <div class="slots-group">
+              <span class="slots-sublabel">Mañana (Luz natural en jardines)</span>
+              <div class="slots-buttons-grid">
+                <button type="button" class="time-slot-btn active" data-slot="09:30 AM">09:30 AM</button>
+                <button type="button" class="time-slot-btn" data-slot="11:00 AM">11:00 AM</button>
+              </div>
+            </div>
+
+            <div class="slots-group">
+              <span class="slots-sublabel">Tarde (Tertulia & Solárium)</span>
+              <div class="slots-buttons-grid">
+                <button type="button" class="time-slot-btn" data-slot="02:30 PM">02:30 PM</button>
+                <button type="button" class="time-slot-btn" data-slot="04:00 PM">04:00 PM</button>
+              </div>
+            </div>
+
+            <div class="slots-group">
+              <span class="slots-sublabel">Modalidad de Visita</span>
+              <div class="modality-radios">
+                <label class="radio-pill-item">
+                  <input type="radio" name="visitType" value="presencial" checked>
+                  <span>☕ Recorrido Presencial con Café</span>
+                </label>
+                <label class="radio-pill-item">
+                  <input type="radio" name="visitType" value="virtual">
+                  <span>💻 Videollamada Informativa</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Ticket Resumen en Vivo -->
+            <div class="booking-ticket-summary">
+              <div class="ticket-header">
+                <strong>Resumen de tu Visita:</strong>
+                <span class="ticket-status-pill">Confirmación Inmediata</span>
+              </div>
+              <div class="ticket-details">
+                <div>📅 Fecha: <strong id="ticketDateText">Miércoles 28 de Octubre</strong></div>
+                <div>⏰ Hora: <strong id="ticketTimeText">09:30 AM</strong></div>
+                <div>📍 Lugar: <strong>Sede Campestre Hogar San Lucas, Medellín</strong></div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-pink btn-confirm-booking" id="btnConfirmScheduledVisit">
+              <span>Confirmar Visita y Enviar por WhatsApp 💬</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== MITOS Y VERDADES ==================== -->
+    <section class="section facilities-bg" id="mitos-verdades">
+      <div class="container">
+        <div class="section-title-center reveal-on-scroll">
+          <h2>
+            Mitos y Verdades sobre<br>
+            <span class="doodle-underlined">
+              el <span class="font-script script-highlight">envejecimiento activo</span>
+              <svg viewBox="0 0 380 28" fill="none">
+                <path d="M6 18C70 8 200 6 374 14M24 22C110 14 260 12 360 20" stroke="#E86A45" stroke-width="6" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </h2>
+          <p>Derribando estigmas para comprender la vejez desde la ciencia y la dignidad.</p>
+        </div>
+
+        <div class="myths-cards-wrap">
+          <div class="myth-clean-card reveal-on-scroll delay-1">
+            <div>
+              <span class="badge-myth">Mito Común</span>
+              <p class="quote-myth">«Es normal perder la memoria al envejecer»</p>
+            </div>
+            <div class="truth-block">
+              <strong>Falso · Enfoque HSL:</strong>
+              <p>El deterioro cognitivo severo no es parte obligada del envejecimiento. La estimulación mental diaria y la socialización marcan una enorme diferencia.</p>
+            </div>
+          </div>
+
+          <div class="myth-clean-card reveal-on-scroll delay-2">
+            <div>
+              <span class="badge-myth">Mito Común</span>
+              <p class="quote-myth">«Una residencia aísla al abuelo de su familia»</p>
+            </div>
+            <div class="truth-block">
+              <strong>Falso · Enfoque HSL:</strong>
+              <p>Al liberar las cargas de cuidado clínico pesado en casa, el tiempo compartido con la familia pasa a ser de cariño, tertulia y abrazos.</p>
+            </div>
+          </div>
+
+          <div class="myth-clean-card reveal-on-scroll delay-3">
+            <div>
+              <span class="badge-myth">Mito Común</span>
+              <p class="quote-myth">«En la adultez mayor ya no se aprende nada nuevo»</p>
+            </div>
+            <div class="truth-block">
+              <strong>Falso · Enfoque HSL:</strong>
+              <p>La mente mantiene su curiosidad. Nuestros residentes descubren aficiones por el arte, la jardinería y la música cada día.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Micro experiencia: 5 Preguntas Flashcard -->
+        <div class="questions-card-container reveal-on-scroll">
+          <div>
+            <span style="font-size: 0.9rem; text-transform: uppercase; font-weight: 800; letter-spacing: 0.05em; color: var(--accent-cyan-light); display: block; margin-bottom: 8px;">Conexión Familiar</span>
+            <h3>5 Preguntas para <span class="font-script" style="color: var(--accent-cyan-light); font-size: 1.25em;">conectar con tus abuelos</span></h3>
+            <p>Tómate un café con tu ser querido y hazle estas preguntas. Descubrirás anécdotas inolvidables de su vida.</p>
+            <a href="#agendar-visita" class="btn btn-pink">
+              <span>Agendar una Visita</span>
+            </a>
+          </div>
+
+          <div class="flashcard-box">
+            <span style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; color: var(--accent-cyan-light);" id="qTracker">Pregunta 1 de 5</span>
+            <div class="flashcard-q" id="qContent">«¿Cuál fue tu primer trabajo y qué aprendiste de esa primera experiencia?»</div>
+            <div class="flashcard-controls">
+              <div class="q-dots-row" id="qDotsContainer"></div>
+              <div style="display: flex; gap: 8px;">
+                <button class="flashcard-btn" id="btnPrevQ" aria-label="Anterior">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                <button class="flashcard-btn" id="btnNextQ" aria-label="Siguiente">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== FEED DE INSTAGRAM DE LA SEMANA ==================== -->
+    <section class="section" id="comunidad-instagram">
+      <div class="container">
+        <div class="section-title-center reveal-on-scroll">
+          <h2>
+            Momentos en Nuestra Comunidad:<br>
+            <span class="doodle-underlined">
+              síguenos en <span class="font-script script-highlight">@hogarsanlucasmedellin</span>
+              <svg viewBox="0 0 380 28" fill="none">
+                <path d="M6 18C70 8 200 6 374 14M24 22C110 14 260 12 360 20" stroke="#E86A45" stroke-width="6" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </h2>
+          <p>Un vistazo íntimo y cariñoso a la cotidianidad, sonrisas y celebraciones en nuestra sede campestre.</p>
+        </div>
+
+        <!-- Instagram Profile Banner Header -->
+        <div class="insta-profile-header reveal-on-scroll">
+          <div class="insta-profile-left">
+            <div class="insta-avatar-circle">
+              <img src="assets/svg/botanical-branch.svg" alt="Hogar San Lucas Instagram">
+            </div>
+            <div>
+              <div class="insta-handle-row">
+                <strong class="insta-handle">hogarsanlucasmedellin</strong>
+                <span class="insta-verified-badge" title="Cuenta verificada">✓</span>
+              </div>
+              <span class="insta-bio-tag">Residencia y Cuidado Geriátrico · Medellín, Colombia</span>
+            </div>
+          </div>
+
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn-instagram-follow">
+            <span>Seguir en Instagram ↗</span>
+          </a>
+        </div>
+
+        <div class="instagram-feed-grid">
+          <div class="insta-post-card reveal-on-scroll delay-1">
+            <div class="insta-post-media">
+              <img src="assets/img/feed/feed-1.jpg" alt="Celebración de amistad y alegría en Hogar San Lucas" loading="lazy">
+              <div class="insta-hover-overlay">
+                <div class="insta-stat">❤️ 142</div>
+                <div class="insta-stat">💬 18</div>
+              </div>
+            </div>
+            <div class="insta-post-caption">
+              <p>Celebrar la vida con música, afecto y abrazos es nuestra tradición de cada semana. #HogarSanLucas #AdultoMayorMedellin</p>
+            </div>
+          </div>
+
+          <div class="insta-post-card reveal-on-scroll delay-2">
+            <div class="insta-post-media">
+              <img src="assets/img/feed/feed-2.jpg" alt="Tardes de tertulia y familia" loading="lazy">
+              <div class="insta-hover-overlay">
+                <div class="insta-stat">❤️ 198</div>
+                <div class="insta-stat">💬 24</div>
+              </div>
+            </div>
+            <div class="insta-post-caption">
+              <p>Puertas siempre abiertas para que los hijos y nietos compartan una tarde de sol. #FamiliaHSL #EnvejecimientoDigno</p>
+            </div>
+          </div>
+
+          <div class="insta-post-card reveal-on-scroll delay-3">
+            <div class="insta-post-media">
+              <img src="assets/img/feed/feed-3.jpg" alt="Sesión guiada de fisioterapia y movilidad" loading="lazy">
+              <div class="insta-hover-overlay">
+                <div class="insta-stat">❤️ 165</div>
+                <div class="insta-stat">💬 14</div>
+              </div>
+            </div>
+            <div class="insta-post-caption">
+              <p>Movilidad activa y sonrisas: cada paso fortalece la independencia y enciende el ánimo. #FisioterapiaGeriátrica</p>
+            </div>
+          </div>
+
+          <div class="insta-post-card reveal-on-scroll delay-4">
+            <div class="insta-post-media">
+              <img src="assets/img/feed/feed-4.jpg" alt="Rincones de paz y naturaleza" loading="lazy">
+              <div class="insta-hover-overlay">
+                <div class="insta-stat">❤️ 212</div>
+                <div class="insta-stat">💬 31</div>
+              </div>
+            </div>
+            <div class="insta-post-caption">
+              <p>La calma de nuestros jardines y el sonido relajante de la fuente. Tu refugio en Medellín. #PazInterior #MedellinVerde</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== TESTIMONIOS TEXTO ==================== -->
+    <section class="section facilities-bg" id="testimonios">
+      <div class="container">
+        <div class="section-title-center reveal-on-scroll">
+          <h2>
+            La tranquilidad de sentir que están en su <span class="font-script script-highlight">propio hogar</span>
+          </h2>
+          <p>Testimonios reales de familias que confían plenamente en Hogar San Lucas.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-figma-card card-cyan reveal-on-scroll delay-1">
+            <div style="color: #F59E0B; font-size: 1.2rem;">★★★★★</div>
+            <p class="testimonial-quote-text">
+              «Elegir Hogar San Lucas nos devolvió la paz a todos. Ver a mi mamá sonriendo en el jardín y recibiendo sus cuidados a tiempo es el mayor alivio para nuestra familia.»
+            </p>
+            <div class="testimonial-author-row">
+              <div class="author-chip-avatar">MC</div>
+              <div>
+                <h5 style="font-size: 1.05rem; font-weight: 800;">María Clara Echeverri</h5>
+                <span style="font-size: 0.85rem; opacity: 0.8;">Hija de Residente · Medellín</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-figma-card card-dark reveal-on-scroll delay-2">
+            <div style="color: #FFD166; font-size: 1.2rem;">★★★★★</div>
+            <p class="testimonial-quote-text">
+              «Mi padre recuperó su alegría gracias a las terapias físicas y al cariño de las enfermeras. La calidad humana de este equipo médico no tiene comparación.»
+            </p>
+            <div class="testimonial-author-row">
+              <div class="author-chip-avatar" style="background: var(--accent-pink); color: #FFFFFF;">AR</div>
+              <div>
+                <h5 style="font-size: 1.05rem; font-weight: 800;">Andrés Restrepo G.</h5>
+                <span style="font-size: 0.85rem; opacity: 0.8;">Familiar hace 2 años</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-figma-card card-peach reveal-on-scroll delay-3">
+            <div style="color: #F59E0B; font-size: 1.2rem;">★★★★★</div>
+            <p class="testimonial-quote-text">
+              «Las instalaciones son preciosas y muy seguras. Cada fin de semana que voy a visitarlo disfruto de un ambiente campestre lleno de respeto y serenidad.»
+            </p>
+            <div class="testimonial-author-row">
+              <div class="author-chip-avatar">LG</div>
+              <div>
+                <h5 style="font-size: 1.05rem; font-weight: 800;">Lucía Gutiérrez P.</h5>
+                <span style="font-size: 0.85rem; opacity: 0.8;">Hija de Residente · Envigado</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECCIÓN: CONTACTO ==================== -->
+    <section class="contact-section-pad" id="contacto">
+      <div class="container">
+        <div class="contact-booking-box reveal-on-scroll">
+          
+          <div class="contact-booking-info">
+            <h2>Ven a conocer <span class="font-script script-highlight">tu nuevo hogar</span></h2>
+            <p>
+              Agenda un recorrido guiado por nuestros jardines y habitaciones. Conoce a nuestro equipo y diseñemos juntos el plan de cuidado ideal para tu ser querido.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 14px;">
+              <a href="https://wa.me/573000000000?text=Hola%20Hogar%20San%20Lucas,%20deseo%20conocer%20m%C3%A1s%20detalles" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 14px; padding: 14px 20px; background: var(--bg-canvas); border-radius: var(--radius-pill); border: 1.5px solid var(--border-subtle); transition: transform 0.25s ease;">
+                <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--accent-cyan-light); color: var(--color-dark); display: flex; align-items: center; justify-content: center; font-weight: 800;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                </div>
+                <div>
+                  <strong style="display: block; font-size: 1rem;">WhatsApp Inmediato</strong>
+                  <span style="font-size: 0.875rem; color: var(--color-body);">Respuesta ágil y atención personalizada</span>
+                </div>
+              </a>
+
+              <div style="display: flex; align-items: center; gap: 14px; padding: 14px 20px; background: var(--bg-canvas); border-radius: var(--radius-pill); border: 1.5px solid var(--border-subtle);">
+                <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--accent-peach); color: #8C3012; display: flex; align-items: center; justify-content: center; font-weight: 800;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div>
+                  <strong style="display: block; font-size: 1rem;">Sede Medellín, Colombia</strong>
+                  <span style="font-size: 0.875rem; color: var(--color-body);">Atención los 7 días de la semana</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulario de Agendamiento -->
+          <form class="booking-form-col" id="bookingMainForm">
+            <div class="form-field-group">
+              <label for="inputName">Nombre completo *</label>
+              <input type="text" id="inputName" placeholder="Tu nombre y apellido" required>
+            </div>
+
+            <div class="form-field-group">
+              <label for="inputPhone">Celular o WhatsApp *</label>
+              <input type="tel" id="inputPhone" placeholder="Ej: +57 310 123 4567" required>
+            </div>
+
+            <div class="form-field-group">
+              <label for="inputService">Modalidad de Interés</label>
+              <select id="inputService">
+                <option value="Estancia Permanente">Estancia Permanente (Residencia)</option>
+                <option value="Centro Día">Centro Día (Jornada Diurna)</option>
+                <option value="Recuperación / Temporal">Estancia Temporal / Recuperación</option>
+                <option value="Visita Guiada">Solo quiero agendar una visita</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-pink" style="padding: 16px; width: 100%; font-size: 1.1rem; margin-top: 8px;">
+              <span>Agendar mi Visita Guiada</span>
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== BOTÓN FLOTANTE DISCRETO Y SENCILLO DE WHATSAPP ==================== -->
+  <a href="https://wa.me/573000000000?text=Hola%20Hogar%20San%20Lucas,%20deseo%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios%20y%20tarifas" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="discreet-whatsapp-btn" 
+     aria-label="Contactar por WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.967.568 1.895.882 2.791.882h.001c3.181 0 5.767-2.587 5.768-5.766.001-3.181-2.585-5.768-5.769-5.768zm7.421 5.766c-.002 4.086-3.327 7.41-7.418 7.41-.001 0-.001 0 0 0-1.257 0-2.484-.338-3.567-.981l-3.967 1.04 1.059-3.867c-.708-1.127-1.082-2.428-1.08-3.602.002-4.087 3.327-7.41 7.418-7.41 1.98 0 3.842.772 5.241 2.172 1.399 1.4 2.167 3.262 2.166 5.238z"/>
+    </svg>
+    <span class="discreet-wa-tooltip">Escríbenos por WhatsApp</span>
+  </a>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <img src="assets/svg/hogar-san-lucas-logo.svg" alt="Hogar San Lucas" class="footer-logo-img">
+          <p class="footer-desc">
+            Residencia campestre y centro de cuidado integral en Medellín. Más de 9 años dedicados a enriquecer la vida de los adultos mayores con afecto, respeto y excelencia médica.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h5>Navegación</h5>
+          <a href="#inicio">Inicio</a>
+          <a href="#compromiso">Propósito</a>
+          <a href="#instalaciones">Instalaciones</a>
+          <a href="#equipo">Equipo Humano</a>
+          <a href="#ubicacion">Ubicación Medellín</a>
+          <a href="#cotizador">Cotizador</a>
+        </div>
+
+        <div class="footer-links-col">
+          <h5>Servicios</h5>
+          <a href="#agendar-visita">Estancia Permanente</a>
+          <a href="#agendar-visita">Centro Día Senior</a>
+          <a href="#agendar-visita">Recuperación Temporal</a>
+          <a href="#agendar-visita">Estimulación Cognitiva</a>
+          <a href="#agendar-visita">Fisioterapia Geriátrica</a>
+        </div>
+
+        <div class="footer-links-col">
+          <h5>Ubicación</h5>
+          <span style="display: block; color: rgba(255,255,255,0.7); margin-bottom: 8px;">Medellín, Antioquia</span>
+          <span style="display: block; color: rgba(255,255,255,0.7); margin-bottom: 8px;">Atención 24 Horas</span>
+          <a href="#agendar-visita" style="color: var(--accent-cyan-light); font-weight: 800; margin-top: 10px;">Agendar Cita &rarr;</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>© 2026 Hogar San Lucas. Todos los derechos reservados. Medellín, Colombia.</div>
+        <div style="display: flex; gap: 24px;">
+          <a href="#" style="color: rgba(255,255,255,0.6);">Tratamiento de Datos</a>
+          <a href="#" style="color: rgba(255,255,255,0.6);">Habilitación en Salud</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

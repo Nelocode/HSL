@@ -1,0 +1,29 @@
+# Git & Repository metadata
+.git
+.gitignore
+README.md
+
+# Large archives and source files (CRITICAL: 15GB 3. Fotos.zip)
+*.zip
+3. Fotos.zip
+Nunito.zip
+hsl semana 1.svg
+cleaned_svg.svg
+
+# Docker files
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# OS & temporary files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+*.tmp
+*.ppm
+*.log
+
+# Editor directories
+.vscode
+.idea
