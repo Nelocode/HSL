@@ -55,34 +55,41 @@
   font-display: swap;
 }
 
-/* Import oficial de Nunito y Dancing Script desde Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Nunito:wght@400;500;600;700;800;900&display=swap');
+/* Import oficial de Nunito Sans, Nunito y Caveat (Writeline fallback) desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Dancing+Script:wght@600;700&family=Nunito+Sans:wght@400;600;700;800;900&family=Nunito:wght@400;500;600;700;800;900&display=swap');
 
-/* --- 2. VARIABLES & TOKENS --- */
+/* --- 2. VARIABLES & TOKENS (Manual de Identidad Visual HSL) --- */
 :root {
-  --font-main: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-script: 'Dancing Script', 'DancingScriptOT', cursive, Georgia, serif;
+  --font-main: 'Nunito Sans', 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-script: 'Writeline', 'Caveat', 'Dancing Script', cursive, Georgia, serif;
 
-  /* Fondo lino cálido exacto del Figma (#F8F5F0) */
-  --bg-canvas: #F8F5F0;
+  /* Fondos limpios del Manual y Social Media (#ffffff + aqua suave) */
+  --bg-canvas: #FFFFFF;
   --bg-surface: #FFFFFF;
-  --bg-surface-alt: #F1ECE3;
+  --bg-surface-alt: #F3F9FB;
 
-  /* Colores de marca armónicos */
-  --color-dark: #00556B;          /* Texto principal oscuro (#00556B) */
-  --color-dark-deep: #003644;
+  /* Colores Corporativos Principales (Manual.pdf pp. 3-4) */
+  --color-dark: #1e566a;          /* Deep Teal corporativo */
+  --color-dark-deep: #153f4e;
   --color-body: #325861;
-  --color-muted: #64868E;
+  --color-muted: #5e7f88;
 
-  --accent-teal: #008493;         /* Turquesa HSL */
-  --accent-cyan: #25B0CF;         /* Cian HSL */
-  --accent-cyan-light: #CEF2FF;   /* Cian pastel HSL */
-  --accent-pink: #E86A45;         /* Color cálido doodle terracota/coral */
-  --accent-peach: #FFEAD9;
+  --accent-teal: #3f8492;         /* Medium Teal corporativo */
+  --accent-cyan: #65aebd;         /* Soft Aqua corporativo */
+  --accent-sky: #68b0ce;          /* Sky Blue corporativo */
+  --accent-cyan-light: #e3f4f8;
 
-  --border-subtle: rgba(0, 85, 107, 0.1);
-  --shadow-card: 0 16px 48px rgba(0, 85, 107, 0.07);
-  --shadow-float: 0 12px 36px rgba(0, 85, 107, 0.12);
+  /* Colores Secundarios / Complementarios (Manual.pdf p. 9) */
+  --accent-pink: #fc7723;         /* Naranja vibrante secundario */
+  --accent-orange: #fc7723;
+  --accent-yellow: #fccd23;       /* Amarillo cálido secundario */
+  --accent-purple: #847cee;       /* Lavanda / Morado suave secundario */
+  --accent-peach: #fff3e8;
+
+  --hsl-gradient: linear-gradient(135deg, #1e566a 0%, #3f8492 48%, #65aebd 100%);
+  --border-subtle: rgba(30, 86, 106, 0.12);
+  --shadow-card: 0 16px 48px rgba(30, 86, 106, 0.08);
+  --shadow-float: 0 12px 36px rgba(30, 86, 106, 0.14);
 
   --radius-pill: 9999px;
   --radius-md: 18px;
@@ -307,27 +314,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-pink {
-  background-color: var(--accent-pink);
+  background-color: var(--accent-orange);
   color: #FFFFFF;
-  box-shadow: 0 6px 18px rgba(232, 106, 69, 0.28);
+  box-shadow: 0 6px 18px rgba(252, 119, 35, 0.28);
 }
 
 .btn-pink:hover {
-  background-color: #D35632;
+  background-color: #e06214;
   transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(211, 86, 50, 0.38);
+  box-shadow: 0 12px 28px rgba(252, 119, 35, 0.38);
 }
 
 .btn-teal {
   background-color: var(--accent-teal);
   color: #FFFFFF;
-  box-shadow: 0 6px 18px rgba(0, 132, 147, 0.25);
+  box-shadow: 0 6px 18px rgba(63, 132, 146, 0.25);
 }
 
 .btn-teal:hover {
   background-color: var(--color-dark);
   transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(0, 85, 107, 0.32);
+  box-shadow: 0 12px 28px rgba(30, 86, 106, 0.32);
 }
 
 /* --- 8. HEADER --- */
@@ -335,7 +342,7 @@ h1, h2, h3, h4, h5, h6 {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(248, 245, 240, 0.94);
+  background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border-subtle);
@@ -1887,7 +1894,7 @@ html[data-font-size="larger"] {
 }
 
 .team-card[data-member="camila"] .team-photo-wrap img {
-  object-position: center 18%;
+  object-position: center 10%;
 }
 
 .team-card[data-member="gabriela"] .team-photo-wrap img {
@@ -2634,7 +2641,7 @@ html[data-font-size="larger"] {
   .site-header {
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
-    background-color: #F8F5F0;
+    background-color: #FFFFFF;
   }
 
   .nav-links {
@@ -2645,7 +2652,7 @@ html[data-font-size="larger"] {
     width: 100%;
     height: calc(100vh - var(--header-height));
     height: calc(100dvh - var(--header-height));
-    background-color: #F8F5F0;
+    background-color: #FFFFFF;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -2768,4 +2775,125 @@ html[data-font-size="larger"] {
     width: 26px;
     height: 26px;
   }
+}
+
+/* ==========================================================================
+   BRAND IDENTITY & INSTAGRAM VISUAL SYSTEM (Manual.pdf + oct-nov / nov-dic)
+   - Marcos orgánicos con 3 esquinas redondeadas y 1 esquina recta
+   - Arcos geométricos con colores secundarios (#fc7723, #fccd23, #847cee)
+   - Gradientes corporativos (#1e566a -> #3f8492 -> #65aebd -> #68b0ce)
+   ========================================================================== */
+
+/* Marcos orgánicos tipo post de Instagram */
+.hero-side-vignette,
+.how-step-visual img,
+.facility-card-item,
+.insta-post-card {
+  border-radius: 30px 30px 30px 6px;
+}
+
+.how-step-row.reverse .how-step-visual img {
+  border-radius: 30px 30px 6px 30px;
+}
+
+/* Tarjetas de Propósito con gradiente corporativo y arco secundario */
+.color-badge-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 26px 26px 26px 6px;
+}
+
+.color-badge-card.card-pink {
+  background: linear-gradient(135deg, #fc7723 0%, #ff8c42 100%);
+}
+
+.color-badge-card.card-pink::after {
+  content: '';
+  position: absolute;
+  top: -36px;
+  right: -36px;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: rgba(252, 205, 35, 0.28);
+  outline: 2px solid rgba(252, 205, 35, 0.55);
+  outline-offset: 6px;
+  pointer-events: none;
+}
+
+.color-badge-card.card-teal {
+  background: var(--hsl-gradient);
+}
+
+.color-badge-card.card-teal::after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  right: -30px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(104, 176, 206, 0.25);
+  outline: 2px solid rgba(255, 255, 255, 0.35);
+  outline-offset: 6px;
+  pointer-events: none;
+}
+
+/* Acentos secundarios alternados en Mitos y Verdades (como en oct-nov Semana 1) */
+.myth-clean-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 26px 26px 26px 6px;
+  border-top: 5px solid var(--accent-purple);
+}
+
+.myth-clean-card:nth-child(2) {
+  border-top-color: var(--accent-orange);
+}
+
+.myth-clean-card:nth-child(3) {
+  border-top-color: var(--accent-yellow);
+}
+
+.myth-clean-card:nth-child(1) .badge-myth {
+  background: rgba(132, 124, 238, 0.14);
+  color: #5b52d6;
+}
+
+.myth-clean-card:nth-child(2) .badge-myth {
+  background: rgba(252, 119, 35, 0.14);
+  color: #d15308;
+}
+
+.myth-clean-card:nth-child(3) .badge-myth {
+  background: rgba(252, 205, 35, 0.22);
+  color: #8f6d00;
+}
+
+/* Tarjetas de Instagram con arcos/bordes inspirados en las parrillas oct-nov y nov-dic */
+.insta-post-card {
+  border-bottom: 4px solid var(--accent-purple);
+}
+
+.insta-post-card:nth-child(2) {
+  border-bottom-color: var(--accent-orange);
+}
+
+.insta-post-card:nth-child(3) {
+  border-bottom-color: var(--accent-yellow);
+}
+
+.insta-post-card:nth-child(4) {
+  border-bottom-color: var(--accent-teal);
+}
+
+/* Flashcard "5 Preguntas" con fondo gradiente oficial HSL */
+.questions-card-container {
+  background: var(--hsl-gradient);
+  border-radius: 32px 32px 32px 8px;
+}
+
+/* Footer con gradiente corporativo profundo */
+.site-footer {
+  background: linear-gradient(165deg, #1e566a 0%, #153f4e 100%);
 }

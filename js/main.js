@@ -459,11 +459,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // 9. FLASHCARD INTERACTIVO: 5 PREGUNTAS
   // =========================================================================
   const questions = [
-    '«¿Cuál fue tu primer trabajo y qué aprendiste de esa primera experiencia?»',
-    '«¿Cuál es la comida o receta que siempre te transporta a tu infancia?»',
-    '«¿Qué consejo sobre el amor o la familia te habría gustado escuchar cuando tenías 20 años?»',
-    '«¿Cuál ha sido el viaje o lugar que más te asombró en toda tu vida?»',
-    '«¿De qué momento o logro en tu vida te sientes hoy más orgulloso?»'
+    '«¿Cuál fue tu primer trabajo y qué aprendiste de esa experiencia?»',
+    '«¿Cómo conociste a tu gran amor?»',
+    '«¿Qué travesura recuerdas con más gracia de tu infancia?»',
+    '«¿Cuál es el mejor consejo que te dieron en la vida?»',
+    '«¿Qué recuerdo de Medellín o de tu juventud llevas siempre en el corazón?»'
   ];
 
   let currentQ = 0;
